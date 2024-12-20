@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | QR code component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @font-face 
+    {
+      font-family:"Outfit";
+      src: url("Outfit-VariableFont_wght.ttf") format("truetype");
+    }
+    html, body 
+    { 
+      background-color: hsl(212, 45%, 89%); 
+      font-family: Outfit;
+
+      height: 100%;
+      width: 100%;
+    }
+    .container
+    {
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      height: 100%;
+      width: 100%;
+    }
+    h1 
+    { 
+      color: hsl(218, 44%, 22%); 
+      font-size: 22px;
+      font-weight: 700;
+
+      margin-top: 0px;
+    }
+    p 
+    { 
+      color: hsl(216, 15%, 48%); 
+      font-size: 15px;
+      font-weight: 400;
+    }
+    .card
+    {
+      background-color: hsl(0, 0%, 100%);
+      border-radius: 5%;
+
+      width: 330px;
+      text-align: center; 
+      padding-bottom: 25px;
+      margin-bottom: 15px;
+    }
+    img
+    {
+      border-radius: 5%;
+
+      height: 300px;
+      width: 300px;
+      margin: 15px;
+    }
+    .attribution 
+    { 
+      font-size: 11px; 
+      text-align: center; 
+    }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <img src="./images/image-qr-code.png" alt="QR-code">
+      <h1>Improve your front-end<br>
+        skills by building projects</h1>
+      <p>Scan the QR code to visit Frontend<br>
+        Mentor and take your coding skills to<br>
+        the next level</p>
+    </div>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">sbogee</a>.
+    </div>
+  </div>
+</body>
+</html>
