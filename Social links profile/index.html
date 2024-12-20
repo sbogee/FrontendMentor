@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Social links profile</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @font-face 
+    {
+      font-family:"Inter";
+      src: url("./assets/fonts/Inter-VariableFont_slnt\,wght.ttf") format("truetype");
+    }
+    html, body 
+    { 
+      height: 100%;
+      width: 100%;
+      font-weight: 400;
+      background-color: hsl(0, 0%, 8%);
+      font-family: Inter;
+    }
+    .container
+    {
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      height: 100%;
+      width: 100%;
+    }
+    .card
+    {
+      background-color: hsl(0, 0%, 12%);
+      border-radius: 5%;
+
+      width: 330px;
+      text-align: center; 
+      padding-bottom: 25px;
+      margin-bottom: 15px;
+    }
+    img
+    {
+      border-radius: 50%;
+      width: 70px;
+      height: 70px;
+      margin-top: 30px;
+    }
+    h1
+    {
+      font-weight: 700;
+      color: hsl(0, 0%, 100%);
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+    h2
+    {
+      color: hsl(75, 94%, 57%);
+      font-weight: 600;
+      font-size: 14px;
+      margin-top: 0px;
+      margin-bottom: 30px;
+    }
+    p
+    {
+      font-size: 14px;
+      color: hsl(0, 0%, 100%);
+    }
+    .buttons
+    {
+      display: flex;
+      flex-direction: column; 
+      margin: 20px;
+    }
+    .b
+    {
+      color: hsl(0, 0%, 100%);
+      background-color: hsl(0, 0%, 20%);
+      margin-top: 10px;
+      border-radius: 10px;
+      font-weight: 600;
+    }
+    .b:hover
+    {
+      background-color: hsl(75, 94%, 57%);
+      p
+      {
+        color: hsl(0, 0%, 8%);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <img src="./assets/images/avatar-jessica.jpeg" alt="Profile picture">
+      <h1>Jessica Randall</h1>
+      <h2>London, United Kingdom</h2>
+      <p>"Front-end developer and avid reader."</p>
+      <div class="buttons">
+        <div class="b">
+          <p>GitHub</p>
+        </div>
+        <div class="b">
+          <p>Frontend Mentor</p>
+        </div>
+        <div class="b">
+          <p>LinkedIn</p>
+        </div>
+        <div class="b">
+          <p>Twitter</p>
+        </div>
+        <div class="b">
+          <p>Instagram</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
