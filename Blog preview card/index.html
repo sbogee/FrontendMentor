@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Blog preview card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @font-face 
+    {
+      font-family:"Figtree";
+      src: url("./assets/fonts/Figtree-VariableFont_wght.ttf") format("truetype");
+    }
+    html, body 
+    { 
+      background-color: hsl(47, 88%, 63%); 
+      font-family: Figtree;
+
+      height: 100%;
+      width: 100%;
+      font-size: 16px;
+      font-weight: 500;
+    }
+    .text
+    {
+      color: hsl(0, 0%, 42%);
+      text-align: left;
+      margin-left: 15px;
+    }
+    .container
+    {
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      height: 100%;
+      width: 100%;
+    }
+    .card
+    {
+      background-color: hsl(0, 0%, 100%);
+      border-radius: 5%;
+      border: 3px solid hsl(0, 0%, 7%);
+      box-shadow: 10px 10px hsl(0, 0%, 7%);
+
+      width: 350px;
+      text-align: center; 
+      padding-bottom: 25px;
+      margin-bottom: 15px;
+    }
+    img
+    {
+      margin: 15px 15px 0px 15px;
+      width: 320px;
+      border-radius: 5%;
+    }
+    .theme
+    {
+      background-color: hsl(47, 88%, 63%);
+      color: hsl(0, 0%, 7%);
+      text-align: center;
+      margin-left: 15px;
+      margin-right: 230px;
+      font-weight: 800;
+      border-radius: 4px;
+    }
+    .theme p
+    {
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+    .date
+    {
+      text-align: left;
+      margin-left: 15px;
+      color: hsl(0, 0%, 7%);
+    }
+    h1
+    {
+      color: hsl(47, 88%, 63%);
+      font-size: 22px;
+      text-align: left;
+      margin-left: 15px;
+      font-weight: 800;
+    }
+    .author
+    {
+      display: flex;
+      margin-left: 15px;
+      font-weight: 800;
+    }
+    .author img
+    {
+      margin: 0px;
+      width: 50px;
+      height: 50px;
+      border-radius: 0%;
+      margin-right: 15px;
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <img src="./assets/images/illustration-article.svg" alt="Abstract image">
+      <div class="theme">
+        <p>Learning</p>
+      </div>
+      <div class="date">
+        <p>Published 21 Dec 2023</p>
+      </div>
+      <h1>HTML & CSS foundations</h1>
+      <div class="text">
+        <p>These languages are the backbone of every website, defining structure, content, and presentation.</p>
+      </div>
+      <div class="author">
+        <img src="./assets/images/image-avatar.webp" alt="Photo of author">
+        <p>Greg Hooper</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
