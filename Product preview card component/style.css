@@ -1,0 +1,138 @@
+@font-face 
+{
+    font-family:"Fraunces";
+    src: url("./Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf") format("truetype");
+}
+@font-face 
+{
+    font-family:"Montserrat";
+    src: url("./Montserrat-VariableFont_wght.ttf") format("truetype");
+}
+html, body
+{
+    height: 100%;
+    width: 100%;
+    background-color: hsl(30, 38%, 92%);
+    font-size: 14px;
+}
+.container
+{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+.category
+{
+    font-family: Montserrat;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+    margin: 15px 25px 15px 25px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+h1
+{
+    font-family: Fraunces;
+    font-weight: 700;
+    color: hsl(212, 21%, 14%);
+    margin: 15px 25px 15px 25px;
+}
+p
+{
+    font-family: Montserrat;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+    margin: 15px 25px 15px 25px;
+    line-height: 1.6;
+}
+.prices
+{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 15px 25px 15px 25px;
+}
+.discount-price
+{
+    font-family: Fraunces;
+    font-weight: 700;
+    color: hsl(158, 36%, 37%);
+    font-size: 28px;
+    margin-right: 25px;
+}
+.original-price
+{
+    font-family: Montserrat;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+    align-self: center;
+}
+.add-cart-button
+{
+    margin: 15px 25px 15px 25px;
+}
+.fa-shopping-cart
+{
+    padding-right: 8px;
+}
+button
+{
+    font-family: Montserrat;
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+
+    height: 45px;
+    width: 100%;
+}
+
+@media only screen and (max-width: 580px)
+{  
+    .card
+    {
+        background-color: hsl(0, 0%, 100%);
+        width: 90%;
+        border-radius: 10px;
+    }
+    img 
+    {
+        width: 100%;
+        border-radius: 10px 10px 0px 0px;
+        margin-bottom: 15px;
+    }
+}
+
+@media only screen and (min-width: 580px)
+{
+    .card
+    {
+        background-color: hsl(0, 0%, 100%);
+        width: 550px;
+        height: 370px;
+        border-radius: 10px;
+        display:flex;
+        
+    }
+    img
+    {
+
+        height: 370px;
+        border-radius: 10px 0px 0px 10px;
+    }
+    .content{
+        padding-top: 30px;
+    }
+    button:hover
+    {
+        background-color: hsl(156, 42%, 17%);
+    }
+}
