@@ -1,0 +1,112 @@
+@font-face 
+{
+    font-family:"Poppins";
+    src: url("./Poppins-Regular.ttf") format("truetype");
+}
+html, body
+{
+    background-color: hsl(0, 0%, 98%);
+    font-family: Poppins;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 15px;
+}
+h1
+{
+    margin: 0px 25px 0px 25px;
+    color: hsl(234, 12%, 34%);
+}
+.not-bold
+{
+    padding-top: 50px;
+    font-weight: 200;
+}
+.summary
+{
+    font-weight: 400;
+    color: hsl(229, 6%, 66%);
+    margin: 30px 25px 80px 25px;
+    width: 500px;
+}
+.green
+{
+    border-top: 5px solid hsl(180, 62%, 55%);
+}
+.red
+{
+    border-top: 5px solid hsl(0, 78%, 62%);
+}
+.yellow
+{
+    border-top: 5px solid hsl(34, 97%, 64%);
+}
+.blue
+{
+    border-top: 5px solid hsl(212, 86%, 64%);
+}
+.card
+{
+    border-radius: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    text-align: left;
+    padding: 0px 25px 25px 25px;
+    width: 400px;
+    p 
+    {
+        font-weight: 400;
+        color: hsl(229, 6%, 66%);
+        margin-top: 10px;
+    }
+    h2 
+    {
+        font-weight: 600;
+        color: hsl(234, 12%, 34%);
+        margin-bottom: 10px;
+    }
+    .img-container
+    {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+}
+@media only screen and (max-width: 1255px)
+{
+    .card
+    {  
+        margin: 0px 25px 25px 25px;
+    }
+    .blue
+    {
+        margin-bottom: 50px;
+    }
+    .desktop-display
+    {
+        display: none;
+    }
+    .mobile-display
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+@media only screen and (min-width: 1255px)
+{
+    .card
+    {
+        margin: 15px 15px 15px 15px;
+    }
+    .mobile-display
+    {
+        display: none;
+    }
+    .desktop-display
+    {
+        display: flex;
+        justify-content: center;
+    }
+}
